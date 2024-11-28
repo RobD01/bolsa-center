@@ -37,13 +37,14 @@ export const bottombarLinks = [
 export const plaza = {
   name: "Bolsa Center",
   address: "9039 Bolsa Ave, Westminster, CA 92683",
-  note: "Available for lease. Email or call for interest",
+  description:
+    "Our center has a variety consulting services such as real estate, accounting, and legal services. Our center also features one of the most popular coffee shops in Orange County: Trung Nguyen Legend, Family Optometry, and Lotus Dental",
   phone1: "714-891-7856",
   phone2: "714-902-3989",
   email: "rdao2893@gmail.com",
   leasing: true,
   leasingDetail:
-    "One 1300 square foot space available now. Another 600 square foot space available November 2024",
+    "One 1150 square foot space on the 2nd floor. One 1350 square foot space on the 3rd floor. One 600 square foot space on the 3rd floor",
 };
 
 export const homeLinks = [
@@ -62,15 +63,19 @@ export const homeLinks = [
 export const homeInfo = [
   {
     id: 1,
-    name: plaza.name,
+    description: true,
   },
   {
     id: 2,
-    address: "9039 Bolsa Ave, Westminster, CA 92683",
+    name: true,
   },
   {
     id: 3,
-    video: "www.youtube.com/watch?v=iWkMbonpEVg",
+    address: true,
+  },
+  {
+    id: 4,
+    video: true,
   },
 ];
 
