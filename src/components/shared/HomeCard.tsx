@@ -4,10 +4,10 @@ import YoutubeEmbed from "./YoutubeEmbed";
 type HomeCardProps = {
   post: {
     id: number;
-    name?: string;
-    description?: string;
-    address?: string;
-    video?: string;
+    name?: boolean | undefined;
+    description?: boolean | undefined;
+    address?: boolean | undefined;
+    video?: boolean | undefined;
   };
 };
 
