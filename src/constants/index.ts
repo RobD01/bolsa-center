@@ -14,25 +14,14 @@ export const sidebarLinks = [
     route: "/leasing",
     label: "Leasing",
   },
+  {
+    imgURL: "/assets/icons/people.svg",
+    route: "/tenant",
+    label: "Tenant",
+  },
 ];
 
-export const bottombarLinks = [
-  {
-    imgURL: "/assets/icons/home.svg",
-    route: "/",
-    label: "Home",
-  },
-  {
-    imgURL: "/assets/icons/shopping.svg",
-    route: "/shop",
-    label: "Shop",
-  },
-  {
-    imgURL: "/assets/icons/key.svg",
-    route: "/leasing",
-    label: "Leasing",
-  },
-];
+export const bottombarLinks = sidebarLinks;
 
 export const plaza = {
   name: "Bolsa Center",

@@ -310,7 +310,7 @@
 
   /* Button */
   .shad-button_primary {
-    @apply text-light-1 flex gap-2 !important;
+    @apply text-light-1  gap-2 p-1 rounded-md w-1/2 mx-auto !important;
     background-color: var(--color5);
   }
   .shad-button_primary:hover {
