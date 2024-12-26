@@ -1,12 +1,10 @@
-import HomeCard from "@/components/shared/HomeCard";
-import { homeInfo } from "@/constants";
 import { useState } from "react";
-const correctCode = "123456";
 
 const Tenant = () => {
   const [accessCode, setAccessCode] = useState<string>("");
   const [isCodeCorrect, setIsCodeCorrect] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
+  const correctCode = "123456";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
