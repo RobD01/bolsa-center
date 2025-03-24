@@ -324,3 +324,26 @@ export const tenant = [
       "https://lh5.googleusercontent.com/p/AF1QipPa6qdwICv07xElEFY_oMHyTbJFVpd5Eb7QbP0E",
   },
 ];
+
+export const code = [
+  {
+    id: 1,
+    name: "Dumpster",
+    code: "8560 (Beginning April 2025: 0107)",
+  },
+  {
+    id: 2,
+    name: "Restroom 2nd floor",
+    code: "0218",
+  },
+  {
+    id: 3,
+    name: "Restroom 3rd floor",
+    code: "0303",
+  },
+  {
+    id: 4,
+    name: "Roof Left side",
+    code: "6022",
+  },
+];

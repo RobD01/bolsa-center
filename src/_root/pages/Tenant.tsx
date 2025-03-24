@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { code } from "@/constants";
+import CodeCard from "@/components/shared/CodeCard";
 
 const Tenant = () => {
   const [accessCode, setAccessCode] = useState<string>("");
   const [isCodeCorrect, setIsCodeCorrect] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>("");
-  const correctCode = "123456";
+  const correctCode = "101coffee";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,15 +40,17 @@ const Tenant = () => {
         </form>
       ) : (
         <div>
-          <h2>Access Granted</h2>
           <p>Welcome to the Tenant Portal</p>
           <p>
-            Coming soon. Still developing the page. This will be where we list
-            the codes for locks (restroom, roof, etc), and other relevant news
-            for the tenants from management. Do not share with customers or
-            anyone not authorized. Only reserved for the landlord, property
-            management, and tenants
+            This will be where we list the codes for locks (restroom, roof,
+            etc), and other relevant news for the tenants from management. Do
+            not share with customers or anyone not authorized. Only reserved for
+            the landlord, property management, and tenants
           </p>
+          {code?.map((post) => (
+            // @ts-expect-error post
+            <CodeCard post={post} key={post.id} />
+          ))}
         </div>
       )}
     </div>
